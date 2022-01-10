@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(121, 115, 155);
+  }
+  html {
+    font-size: 75%;
+    color: white;
+  }
+  body {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.6em;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  main {
+    display: grid;
+    grid-template-areas:
+      "menu reviews rating sentiment"
+      "menu visitor visitor visitor ";
+    grid-gap: 25px;
+    padding: 20px;
+    height: 93vh;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+  div {
+    background-color: rgb(63, 57, 99);
+    padding: 15px;
+  }
+  #menu {
+    grid-area: menu;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  #review {
+    grid-area: reviews;
+  }
+  #sentiment {
+    grid-area: sentiment;
+    display: flex;
+    flex-direction: column;
+  }
+  #sentiment ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #sentiment li {
+    font-size: 1.3em;
+  }
+  #rating {
+    grid-area: rating;
+  }
+  #visitor {
+    grid-area: visitor;
+  }
+  #chart {
+    width: 80%;
+    height: 60%;
+    background-color: #8646FF;
+    margin: auto;
+  }
+  h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  h3 {
+    font-size: 1.8em;
+  }
+  ul {
+    list-style: none;
+  }
+  li {
+    padding: 8px 0;
+  }
+  
